@@ -1,0 +1,31 @@
+#********************************************************#
+# www.metodosexatos.com                                  #
+# Prof.Ms. André Santos | andre@metodosexatos.com.br     #
+# Curso Análise Bayesiana com R                          #
+# MODELOS PROBABILÍSTICOS DISCRETOS                      #
+# Data: 26/09/2019                                       #
+#********************************************************#
+
+# Distribuição Hypergeométrica
+
+# Densidade de probabilidade para x = 2, M = 15, 'N - M' = 30, n = 10
+dhyper(2, 15, 30, 10)
+
+# Probabilidade acumulada p(X<=3)
+phyper(3, 15, 30, 10)
+
+# Probabilidade acumulada p(X>=3)
+1-phyper(3, 15, 30, 10)
+
+# Quantil x100q que satisfaz P(X<=x100q) = 0.4
+qhyper(0.1, 15, 30, 10)
+
+# Uma amostra aleatória com 12 elementos
+a <- 12      # total de elementos aleatórios gerados
+M <- 15      # casos com características de interesse de uma população
+NM <- 30     # casos sem características de interesse de uma população
+n <- 10      # amostra de tamanho n
+Hypergeometrica <- rhyper(a, M, NM, n)
+
+# Representação gráfica da distribuição hypergeometrica
+hist(Hypergeometrica)
