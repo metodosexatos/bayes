@@ -1,0 +1,24 @@
+#********************************************************#
+# www.metodosexatos.com                                  #
+# Prof.Ms. André Santos | andre@metodosexatos.com.br     #
+# Curso Análise Bayesiana com R                          #
+# Distribuições de Probabilidade Contínuas               #
+# Data: 29/09/2019                                       #
+#********************************************************#
+
+# Distribuição Gama-Inversa
+
+# Considere que X tem uma densidade gama-inversa com parâmetros alfa = 2 e beta = 3 e...
+# ... estamos interessados em calcular a densidade para X igual a 2.
+dgamma(0.5, 2, 3)*0.25
+
+# Para obtenção de percentis para X faz-se uso da função inversa X = Y^(-1). Se querermos...
+# ... o percentil P95% de X, fazemos o calculo para Y e elevamos a -1.
+qgamma(0.95, 2, 3)^(-1)
+
+# O cálculo da probabilidade acumulada para, por exemplo, P(X<2)=P(Y^-1<2)=P(Y>0.5)=1-P(Y<=0.5)):
+1-pgamma(0.5,2,3)
+
+# A inversa X = Y^-1 é também usada para obter números aleatórios de X.
+# Segue código para exibição de três destes números:
+1/rgamma(3, 2, 3)
