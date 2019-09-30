@@ -1,12 +1,12 @@
 #********************************************************#
 # www.metodosexatos.com                                  #
-# Prof.Ms. AndrÈ Santos | andre@metodosexatos.com.br     #
-# Curso An·lise Bayesiana com R                          #
-# MODELOS PROBABILÕSTICOS DISCRETOS                      #
+# Prof.Ms. Andr√© Santos | andre@metodosexatos.com.br     #
+# Curso An√°lise Bayesiana com R                          #
+# MODELOS PROBABIL√çSTICOS DISCRETOS                      #
 # Data: 26/09/2019                                       #
 #********************************************************#
 
-# DistribuiÁ„o de Poisson
+# Distribui√ß√£o de Poisson
 
 # Densidade de probabilidade para x = 2, mi = 1,8
 dpois(2, 1.8)
@@ -14,16 +14,16 @@ dpois(2, 1.8)
 # Probabilidade acumulada p(X<=3)
 ppois(3,1.8)
 
-# Probabilidade acumulada p(X>=3)
+# Probabilidade acumulada p(X>3)
 qpois(0.1,1.8)
 
 # Quantil x100q que satisfaz P(X<=x100q) = 0.1
 rpois(8, 1.8)
 
-# Uma amostra aleatÛria com 8 elementos
+# Uma amostra aleat√≥ria com 8 elementos
 a <- 8
 mi <- 1.8
 pois <- rpois(a, mi)
 
-# RepresentaÁ„o gr·fica da distribuiÁ„o de poisson
+# Representa√ß√£o gr√°fica da distribui√ß√£o de poisson
 hist(pois)
