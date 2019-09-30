@@ -14,7 +14,7 @@ dnorm(2, 3, 1)
 # Probabilidade acumulada p(X<=2)
 pnorm(2, 3, 1)
 
-# Probabilidade acumulada p(X>=2)
+# Probabilidade acumulada p(X>2)
 1-pnorm(2, 3, 1)
 
 # Quantil x100q que satisfaz P(X<=x100q) = 0.15
