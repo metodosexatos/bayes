@@ -21,10 +21,10 @@ phyper(2, 15, 30, 10)
 qhyper(0.4, 15, 30, 10)
 
 # Uma amostra aleatória com 12 elementos
-a <- 12
-M <- 15
-NM <- 30
-n <- 10
+a <- 12      # tamanho da amostra
+M <- 15      # casos com características de interesse de uma população
+NM <- 30     # casos sem características de interesse de uma população
+n <- 5       # valor de cada elemento aleatório gerado de 0 a n
 Hypergeometrica <- rhyper(a, M, NM, n)
 
 # Representação gráfica da distribuição hypergeometrica
