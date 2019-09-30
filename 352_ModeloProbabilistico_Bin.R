@@ -1,12 +1,12 @@
 #********************************************************#
 # www.metodosexatos.com                                  #
-# Prof.Ms. AndrÈ Santos | andre@metodosexatos.com.br     #
-# Curso An·lise Bayesiana com R                          #
-# MODELOS PROBABILÕSTICOS DISCRETOS                      #
+# Prof.Ms. Andr√© Santos | andre@metodosexatos.com.br     #
+# Curso An√°lise Bayesiana com R                          #
+# MODELOS PROBABIL√çSTICOS DISCRETOS                      #
 # Data: 26/09/2019                                       #
 #********************************************************#
 
-# DistribuiÁ„o Binomial
+# Distribui√ß√£o Binomial
 
 # Densidade de probabilidade para x = 2, n = 7 e teta = 0.3
 dbinom(x = 2, size = 7, prob = 0.3)
@@ -14,18 +14,18 @@ dbinom(x = 2, size = 7, prob = 0.3)
 # Probabilidade acumulada p(X<=2)
 pbinom(q = 2, size = 7, prob = 0.3)
 
-# Probabilidade acumulada p(X>=2)
+# Probabilidade acumulada p(X>2)
 1-pbinom(q = 2, size = 7, prob = 0.3)
 
 # Quantil x100q que satisfaz P(X<=x100q) = 0.4
 qbinom(p = 0.4, size = 7, prob = 0.3)
 
-# Uma amostra aleatÛria com 12 elementos
+# Uma amostra aleat√≥ria com 12 elementos
 a <- 7      # valores de 0 a n, para cada elemento da amostra
 b <- 1000   # total de elementos na amostra
-c <- 0.3    # probabilidade para um ˙nico caso
+c <- 0.3    # probabilidade para um √∫nico caso
 binomial <- rbinom(n = b, size = a, prob = c)
 
-# RepresentaÁ„o gr·fica da distribuiÁ„o binomial
+# Representa√ß√£o gr√°fica da distribui√ß√£o binomial
 hist(binomial)
 
