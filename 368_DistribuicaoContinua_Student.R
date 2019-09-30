@@ -1,12 +1,12 @@
 #********************************************************#
 # www.metodosexatos.com                                  #
-# Prof.Ms. André Santos | andre@metodosexatos.com.br     #
-# Curso Análise Bayesiana com R                          #
-# Distribuições de Probabilidade Contínuas               #
+# Prof.Ms. AndrÃ© Santos | andre@metodosexatos.com.br     #
+# Curso AnÃ¡lise Bayesiana com R                          #
+# DistribuiÃ§Ãµes de Probabilidade ContÃ­nuas               #
 # Data: 28/09/2019                                       #
 #********************************************************#
 
-# Distribuição de Student
+# DistribuiÃ§Ã£o de Student
 
 # Densidade de probabilidade para x = 1 em uma Student padronizada T com g=18 graus de liberdade
 dt(1, 18)
@@ -14,18 +14,18 @@ dt(1, 18)
 # Probabilidade acumulada p(T<=1)
 pt(1, 18)
 
-# Probabilidade acumulada p(X>=1)
+# Probabilidade acumulada p(X>1)
 1-pt(1, 18)
 
 # Quantil x100q que satisfaz P(X<=x100q) = 0.15
 qt(0.15, 18)
 
-# Uma amostra aleatória com 9 elementos
+# Uma amostra aleatÃ³ria com 9 elementos
 a <- 9
 g <- 18
 student <- rt(a, g)
 print(student)
 
-# Representação gráfica da distribuição de Student
+# RepresentaÃ§Ã£o grÃ¡fica da distribuiÃ§Ã£o de Student
 hist(student)
 
