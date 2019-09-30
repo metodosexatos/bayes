@@ -14,7 +14,7 @@ dgamma(5, 2, 1)
 # Probabilidade acumulada p(X<=4)
 pgamma(4, 2, 1)
 
-# Probabilidade acumulada p(X>=4)
+# Probabilidade acumulada p(X>4)
 1-pgamma(4, 2, 1)
 
 # Quantil x100q que satisfaz P(X<=x100q) = 0.35
