@@ -14,7 +14,7 @@ dt(1, 18)
 # Probabilidade acumulada p(T<=1)
 pt(1, 18)
 
-# Probabilidade acumulada p(X>=1)
+# Probabilidade acumulada p(T>1)
 1-pt(1, 18)
 
 # Quantil x100q que satisfaz P(X<=x100q) = 0.15
