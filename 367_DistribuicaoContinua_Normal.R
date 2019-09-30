@@ -1,12 +1,12 @@
 #********************************************************#
 # www.metodosexatos.com                                  #
-# Prof.Ms. André Santos | andre@metodosexatos.com.br     #
-# Curso Análise Bayesiana com R                          #
-# Distribuições de Probabilidade Contínuas               #
+# Prof.Ms. AndrÃ© Santos | andre@metodosexatos.com.br     #
+# Curso AnÃ¡lise Bayesiana com R                          #
+# DistribuiÃ§Ãµes de Probabilidade ContÃ­nuas               #
 # Data: 28/09/2019                                       #
 #********************************************************#
 
-# Distribuição Normal
+# DistribuiÃ§Ã£o Normal
 
 # Densidade de probabilidade para x = 5 em uma N(mi = 3, sigma = 1)
 dnorm(2, 3, 1)
@@ -14,19 +14,19 @@ dnorm(2, 3, 1)
 # Probabilidade acumulada p(X<=2)
 pnorm(2, 3, 1)
 
-# Probabilidade acumulada p(X>=2)
+# Probabilidade acumulada p(X>2)
 1-pnorm(2, 3, 1)
 
 # Quantil x100q que satisfaz P(X<=x100q) = 0.15
 qnorm(0.15, 3, 1)
 
-# Uma amostra aleatória com 9 elementos
+# Uma amostra aleatÃ³ria com 9 elementos
 a <- 9
 mi <- 3
 sigma <- 1
 normal <- rnorm(a, mi, sigma)
 print(normal)
 
-# Representação gráfica da distribuição Normal
+# RepresentaÃ§Ã£o grÃ¡fica da distribuiÃ§Ã£o Normal
 hist(normal)
 
