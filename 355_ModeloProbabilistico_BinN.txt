@@ -19,7 +19,7 @@ pnbinom(15, 5, 0.3)
 1-pnbinom(15, 5, 0.3)
 
 # Quantil x100q que satisfaz P(X<=x100q) = 0.1
-qnbinom(15, 5, 0.3)
+qnbinom(0.1, 5, 0.3)
 
 # Uma amostra aleatória com 8 elementos
 a <- 8
